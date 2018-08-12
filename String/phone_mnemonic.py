@@ -22,3 +22,17 @@ def phone_mnemonic(phone_number):
 
 phone_number = '123'
 print(phone_mnemonic(phone_number))
+
+def self_try(phone_number):
+   def resurion(digit):
+       if digit == len(phone_number):
+           main_list.append( ''.join(partial_list))
+       else:
+            for c in MAPPING[int(phone_number[digit])]:
+                partial_list[digit] = c
+                resurion(digit+1)
+   main_list=[]
+   partial_list=['']*len(phone_number)
+   resurion(0)
+   return main_list
+print(self_try(phone_number))
