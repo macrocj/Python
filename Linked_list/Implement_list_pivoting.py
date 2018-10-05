@@ -52,7 +52,10 @@ class LinkedList:
         less_iter.next = equal_head.next
         self.head = less_head.next
 
+
+
 l = LinkedList()
+
 for i in (1,12,6,5,7,3,8,2,24):
     l.append(i)
 l.list_pivoting(7)
